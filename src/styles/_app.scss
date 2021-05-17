@@ -1,0 +1,19 @@
+@import-normalize;
+@import "reset-css";
+// font family
+
+html{
+    font-size: 10px;
+    box-sizing: border-box;
+    min-height: 100vh;
+    // font-family: ;
+}
+
+*, *::before, *::after{
+    font-size: inherit;
+    box-sizing: inherit;
+}
+
+img{
+    max-width: 100%;
+}
