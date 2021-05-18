@@ -113,10 +113,8 @@ function App() {
           <button className="sign-up-form__btn">CLAIM YOUR FREE TRIAL</button>
           <p className="sign-up-form__terms">
             By clicking the button, you are agreeing to our
-            <a href="#">
-              <span className="sign-up-form__terms--link">
-                Terms and Services
-              </span>
+            <a href="#" className="sign-up-form__terms--link">
+              <span>Terms and Services</span>
             </a>
           </p>
         </form>
