@@ -2,7 +2,7 @@ $bg: 1440px;
 
 .sign-up-form{
     min-height: 100vh;
-
+    padding: 0 2.4rem;
     // background images
     background-image: url("../images/bg-intro-mobile.png");
     background-repeat: no-repeat;
@@ -35,12 +35,14 @@ $bg: 1440px;
         line-height: var(--body-line);
     }
     &__banner{
+        background-color: var(--color-blue);
+        padding: 1.8rem 6.6rem;
+        border-radius: 1rem;
+
+        // text style
         font-size: var(--banner-text-size);
         line-height: var(--banner-text-line);
         letter-spacing: var(--banner-text-spacing);
-        
-        background-color: var(--color-blue);
-        padding: 1.8rem 6.6rem;
 
         // space between banner and form
         margin-bottom: 2.4rem;
