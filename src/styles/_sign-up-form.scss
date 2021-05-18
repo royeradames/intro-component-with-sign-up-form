@@ -120,6 +120,7 @@ $bg: 1440px;
             width: 100%;
             &--error{
                 border: solid var(--color-orange) .2rem;
+                color: var(--color-orange);
             }
         }
         &-error-icon{
@@ -153,6 +154,10 @@ $bg: 1440px;
         line-height: var(--form-btn-text-line);
         letter-spacing: var(--form-btn-text-spacing);
         font-weight: 600;
+        
+        &:active{
+            background-color: #77E2B3;
+        }
     }
     &__terms{
         padding-top: .8rem;
