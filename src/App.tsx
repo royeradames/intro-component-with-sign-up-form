@@ -96,7 +96,7 @@ function App() {
   return (
     <main className="sign-up-form">
       <div className="sign-up-form__call-to-action">
-        <h1 className="sign-up-form__heading">
+        <h1 className="sign-up-form__heading" id="heading">
           Learn to code by watching others
         </h1>
         <p className="sign-up-form__body">
@@ -117,7 +117,7 @@ function App() {
           <button className="sign-up-form__btn">CLAIM YOUR FREE TRIAL</button>
           <p className="sign-up-form__terms">
             By clicking the button, you are agreeing to our
-            <a href="#" className="sign-up-form__terms--link">
+            <a href="heading" className="sign-up-form__terms--link">
               <span> Terms and Services</span>
             </a>
           </p>
