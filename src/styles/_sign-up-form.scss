@@ -86,6 +86,10 @@ $bg: 1440px;
         background-color: white;
         box-shadow: 0 .8rem 0 rgb(0, 0, 0, .1469);
         border-radius: 1rem;
+        @media(min-width: $bg){
+                padding: 4rem;
+            }
+
         &-input{
             &-container{
                 // add spacing between form inputs
@@ -118,6 +122,11 @@ $bg: 1440px;
 
             // stretch input
             width: 100%;
+
+            @media(min-width: $bg){
+                // increase spacing
+                padding: 1.5rem 0 1.5rem 3.2rem;
+            }
             &--error{
                 border: solid var(--color-orange) .2rem;
                 color: var(--color-orange);
