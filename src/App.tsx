@@ -58,9 +58,7 @@ function App() {
 
   // generate inputs
   const formInputs = () => {
-    console.log("inside formInputs");
     return formData.map((data) => {
-      console.log("inside formData: " + data.name);
       return (
         <div className="sign-up-form__input-container">
           <input
@@ -110,7 +108,7 @@ function App() {
 
         <button className="sign-up-form__btn">CLAIM YOUR FREE TRIAL</button>
         <p className="sign-up-form__terms">
-          By clicking the button, you are agreeing to our{" "}
+          By clicking the button, you are agreeing to our
           <a href="#">
             <span className="sign-up-form__terms--link">
               Terms and Services
