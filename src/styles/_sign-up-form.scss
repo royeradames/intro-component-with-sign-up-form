@@ -44,6 +44,7 @@ $bg: 1440px;
         background-color: var(--color-blue);
         padding: 1.8rem 6.6rem;
         border-radius: 1rem;
+        box-shadow: 0 .8rem 0 rgb(0, 0, 0, .1469);
 
         // text style
         font-size: var(--banner-text-size);
@@ -61,7 +62,8 @@ $bg: 1440px;
     &__form{
         padding: 2.4rem;
         background-color: white;
-
+        box-shadow: 0 .8rem 0 rgb(0, 0, 0, .1469);
+        border-radius: 1rem;
         &-input{
             // form inputs text styles
             font-size: var(--form-text-size);
