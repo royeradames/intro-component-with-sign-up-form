@@ -7,7 +7,7 @@ $bg: 1440px;
     background-image: url("../images/bg-intro-mobile.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-color: var(--color-pink);
+    background-color: var(--color-orange);
     @media(min-width: $bg){
         background-image: url("../images/bg-intro-desktop.png");
     }
@@ -93,5 +93,16 @@ $bg: 1440px;
         font-size: var(--form-btn-text-size);
         line-height: var(--form-btn-text-line);
         letter-spacing: var(--form-btn-text-spacing);
+    }
+    &__terms{
+        color: #BAB7D4;
+
+        font-size: var(--form-terms-text-size);
+        line-height: var(--form-terms-text-line);
+
+        &--link{
+            color: var(--color-orange);
+            margin-bottom: .8rem;
+        }
     }
 }
