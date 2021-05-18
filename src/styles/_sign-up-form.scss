@@ -20,10 +20,12 @@ $bg: 1440px;
         line-height: var(--h1-line-sm);
         letter-spacing: var(--h1-spacing-sm);
 
+        margin-bottom: 1.6rem;
         @media(min-width: $bg){
             font-size: var(--h1-size-bg);
             line-height: var(--h1-line-bg);
             letter-spacing: var(--h1-spacing-bg);
+            margin-bottom: 2.5rem;
         }
     }
 
