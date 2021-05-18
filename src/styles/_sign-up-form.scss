@@ -29,14 +29,22 @@ $bg: 1440px;
         justify-content: center;
         align-content: center;
         column-gap: 4.5rem;
+
+        
     }
     &__call-to-action{
         align-self: center;
+
+        @media(min-width: $bg){
+            // text
+            text-align: start;
+        }
     }
     &__heading{
         font-size: var(--h1-size-sm);
         line-height: var(--h1-line-sm);
         letter-spacing: var(--h1-spacing-sm);
+        font-weight: bold;
 
         margin-bottom: 1.6rem;
         @media(min-width: $bg){
@@ -68,6 +76,9 @@ $bg: 1440px;
         @media(min-width: $bg){
             padding: 1.8rem 11rem;
         }
+        &--bold{
+            font-weight: bold;
+        }
     }
 
     &__form{
@@ -92,10 +103,11 @@ $bg: 1440px;
             // layout
             grid-area: input;
 
-            // form inputs text styles
+            // text
             font-size: var(--form-text-size);
             line-height: var(--form-text-line);
             letter-spacing: var(--form-text-spacing);
+            font-weight: 600;
 
             // custom border
             border: solid #DEDEDE .1rem;
@@ -120,6 +132,7 @@ $bg: 1440px;
             color: var(--color-orange);
             font-size: 1.1rem;
             text-align: right;
+            font-weight: 500;
         }
     }
 
@@ -138,18 +151,22 @@ $bg: 1440px;
         font-size: var(--form-btn-text-size);
         line-height: var(--form-btn-text-line);
         letter-spacing: var(--form-btn-text-spacing);
+        font-weight: 600;
     }
     &__terms{
         padding-top: .8rem;
         color: #BAB7D4;
 
+        // text
         font-size: var(--form-terms-text-size);
         line-height: var(--form-terms-text-line);
+        font-weight: 500;
 
         &--link{
             color: var(--color-orange);
             margin-bottom: .8rem;
             text-decoration: none;
+            font-weight: bold;
         }
     }
 }
