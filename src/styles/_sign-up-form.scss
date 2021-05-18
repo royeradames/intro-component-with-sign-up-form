@@ -12,6 +12,9 @@ $bg: 1440px;
         background-image: url("../images/bg-intro-desktop.png");
     }
 
+    // text color
+    color: white;
+
     &__heading{
         font-size: var(--h1-size-sm);
         line-height: var(--h1-line-sm);
