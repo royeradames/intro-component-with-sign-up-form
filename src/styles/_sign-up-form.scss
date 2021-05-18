@@ -2,7 +2,7 @@ $bg: 1440px;
 
 .sign-up-form{
     min-height: 100vh;
-    padding: 8.8rem 2.4rem 0 2.4rem;
+    padding: 8.8rem 2.4rem 6.8rem 2.4rem;
     // background images
     background-image: url("../images/bg-intro-mobile.png");
     background-repeat: no-repeat;
@@ -20,8 +20,19 @@ $bg: 1440px;
     @media(min-width: $bg){
         background-image: url("../images/bg-intro-desktop.png");
         row-gap: 0;
-    }
 
+        // layout
+        grid-template: 
+            "call-to-action listing" max-content
+            / 52.5rem 54rem
+        ;
+        justify-content: center;
+        align-content: center;
+        column-gap: 4.5rem;
+    }
+    &__call-to-action{
+        align-self: center;
+    }
     &__heading{
         font-size: var(--h1-size-sm);
         line-height: var(--h1-line-sm);
@@ -103,6 +114,7 @@ $bg: 1440px;
         letter-spacing: var(--form-btn-text-spacing);
     }
     &__terms{
+        padding-top: .8rem;
         color: #BAB7D4;
 
         font-size: var(--form-terms-text-size);
@@ -111,6 +123,7 @@ $bg: 1440px;
         &--link{
             color: var(--color-orange);
             margin-bottom: .8rem;
+            text-decoration: none;
         }
     }
 }
