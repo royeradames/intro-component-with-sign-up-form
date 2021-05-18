@@ -62,7 +62,11 @@ function App() {
       return (
         <div className="sign-up-form__form-input-container">
           <input
-            className="sign-up-form__form-input"
+            className={`sign-up-form__form-input ${
+              errors[data.register]?.message
+                ? "sign-up-form__form-input--error"
+                : ""
+            }`}
             aria-label={data.name}
             {...register(data.register)}
             placeholder={data.name}
@@ -114,7 +118,7 @@ function App() {
           <p className="sign-up-form__terms">
             By clicking the button, you are agreeing to our
             <a href="#" className="sign-up-form__terms--link">
-              <span>Terms and Services</span>
+              <span> Terms and Services</span>
             </a>
           </p>
         </form>
