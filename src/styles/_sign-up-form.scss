@@ -54,5 +54,15 @@ $bg: 1440px;
         padding: 2.4rem;
         background-color: white;
 
+        &-input{
+            // form inputs text styles
+            font-size: var(--form-text-size);
+            line-height: var(--form-text-line);
+            letter-spacing: var(--form-text-spacing);
+
+            // add spacing between form inputs
+            margin-bottom: 1.6rem;
+           
+        }
     }
 }
