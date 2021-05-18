@@ -42,8 +42,17 @@ $bg: 1440px;
         background-color: var(--color-blue);
         padding: 1.8rem 6.6rem;
 
+        // space between banner and form
+        margin-bottom: 2.4rem;
+
         @media(min-width: $bg){
             padding: 1.8rem 11rem;
         }
+    }
+
+    &__form{
+        padding: 2.4rem;
+        background-color: white;
+
     }
 }
