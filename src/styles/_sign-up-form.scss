@@ -11,4 +11,16 @@ $bg: 1440px;
     @media(min-width: $bg){
         background-image: url("../images/bg-intro-desktop.png");
     }
+
+    &__heading{
+        font-size: var(--h1-size-sm);
+        line-height: var(--h1-line-sm);
+        letter-spacing: var(--h1-spacing-sm);
+
+        @media(min-width: $bg){
+            font-size: var(--h1-size-bg);
+            line-height: var(--h1-line-bg);
+            letter-spacing: var(--h1-spacing-bg);
+        }
+    }
 }
