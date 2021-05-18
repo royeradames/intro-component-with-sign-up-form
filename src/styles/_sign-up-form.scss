@@ -76,13 +76,26 @@ $bg: 1440px;
         box-shadow: 0 .8rem 0 rgb(0, 0, 0, .1469);
         border-radius: 1rem;
         &-input{
+            &-container{
+                // add spacing between form inputs
+                margin-bottom: 1.6rem;
+
+                // layout
+                display: grid;
+                grid-template: 
+                    "input" 1fr
+                    / 1fr
+                ;
+                row-gap: .6rem;
+            }
+
+            // layout
+            grid-area: input;
+
             // form inputs text styles
             font-size: var(--form-text-size);
             line-height: var(--form-text-line);
             letter-spacing: var(--form-text-spacing);
-
-            // add spacing between form inputs
-            margin-bottom: 1.6rem;
 
             // custom border
             border: solid #DEDEDE .1rem;
@@ -93,7 +106,20 @@ $bg: 1440px;
 
             // stretch input
             width: 100%;
-           
+            &--error{
+                border: solid var(--color-orange) .2rem;
+            }
+        }
+        &-error-icon{
+            grid-area: input;
+            align-self: center;
+            justify-self: end;
+            margin-right: .7rem;
+        }
+        &-error-message{
+            color: var(--color-orange);
+            font-size: 1.1rem;
+            text-align: right;
         }
     }
 
