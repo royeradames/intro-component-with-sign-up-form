@@ -11,6 +11,14 @@ interface IFormInputs {
   password: string;
 }
 
+// schema
+const schema = yup.object().shape({
+  firstName: yup.string().required(),
+  lastName: yup.string().required(),
+  email: yup.string().email().required(),
+  password: yup.string().required(),
+});
+
 // app
 function App() {
   // handle form data
