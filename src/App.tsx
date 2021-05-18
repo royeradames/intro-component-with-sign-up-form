@@ -21,6 +21,13 @@ const schema = yup.object().shape({
 
 // app
 function App() {
+  // apply schema to form
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({ resolver: yupResolver(schema) });
+
   // handle form data
   const onSubmit = (data: IFormInputs) => {
     console.log(data);
@@ -39,7 +46,7 @@ function App() {
       <div className="sign-up-form__banner">
         Try it free 7 days then $20/mo. thereafter
       </div>
-      <form className="sign-up-form__form">
+      <form onSubmit={handleSubmit(onSubmit)} className="sign-up-form__form">
         {
           // render the inputs
           // formInputs()
