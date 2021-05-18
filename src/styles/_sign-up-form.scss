@@ -28,4 +28,9 @@ $bg: 1440px;
         font-size: var(--body-size);
         line-height: var(--body-line);
     }
+    &__banner{
+        font-size: var(--banner-text-size);
+        line-height: var(--banner-text-line);
+        letter-spacing: var(--banner-text-spacing);
+    }
 }
