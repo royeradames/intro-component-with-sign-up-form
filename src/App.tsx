@@ -60,19 +60,21 @@ function App() {
   const formInputs = () => {
     return formData.map((data) => {
       return (
-        <div className="sign-up-form__input-container">
+        <div className="sign-up-form__form-input-container">
           <input
-            className="sign-up-form__input"
+            className="sign-up-form__form-input"
             aria-label={data.name}
             {...register(data.register)}
             placeholder={data.name}
           />
           {errors[data.register]?.message ? (
             <>
-              <p className="sign-up-form__error-icon">
+              <p className="sign-up-form__form-error-icon">
                 <img src={errorIcon} alt="Red error icon" />
               </p>
-              <p className="sign-up-form__error-message">{data.errorMessage}</p>
+              <p className="sign-up-form__form-error-message">
+                {data.errorMessage}
+              </p>
             </>
           ) : (
             ""
