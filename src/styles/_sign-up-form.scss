@@ -23,4 +23,9 @@ $bg: 1440px;
             letter-spacing: var(--h1-spacing-bg);
         }
     }
+
+    &__body{
+        font-size: var(--body-size);
+        line-height: var(--body-line);
+    }
 }
