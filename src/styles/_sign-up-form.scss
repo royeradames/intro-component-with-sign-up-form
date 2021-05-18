@@ -1,0 +1,14 @@
+$bg: 1440px;
+
+.sign-up-form{
+    min-height: 100vh;
+
+    // background images
+    background-image: url("../images/bg-intro-mobile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color-pink);
+    @media(min-width: $bg){
+        background-image: url("../images/bg-intro-desktop.png");
+    }
+}
