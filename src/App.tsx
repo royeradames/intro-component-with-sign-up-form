@@ -107,7 +107,8 @@ function App() {
       </div>
       <div className="sign-up-form__listing">
         <p className="sign-up-form__banner">
-          Try it free 7 days then $20/mo. thereafter
+          <span className="sign-up-form__banner--bold">Try it free 7 days</span>{" "}
+          then $20/mo. thereafter
         </p>
         <form onSubmit={handleSubmit(onSubmit)} className="sign-up-form__form">
           {
