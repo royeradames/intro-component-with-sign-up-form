@@ -12,8 +12,9 @@ $bg: 1440px;
         background-image: url("../images/bg-intro-desktop.png");
     }
 
-    // text color
+    // general text default
     color: white;
+    text-align: center;
 
     &__heading{
         font-size: var(--h1-size-sm);
@@ -37,7 +38,7 @@ $bg: 1440px;
         font-size: var(--banner-text-size);
         line-height: var(--banner-text-line);
         letter-spacing: var(--banner-text-spacing);
-        text-align: center;
+        
         background-color: var(--color-blue);
         padding: 1.8rem 6.6rem;
 
